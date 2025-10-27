@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--  SEO Meta Tags -->
+        <title>Peryton | Full Stack Web Developer Portfolio</title>
+        <meta name="description"
+            content="Portfolio of Peryton — Full Stack Web Developer skilled in React, Node.js, Python, and modern web technologies. Explore my projects and skills.">
+        <meta name="keywords"
+            content="Full Stack Developer, Web Developer, JavaScript, React, Node.js, Python, Portfolio, Frontend, Backend, MERN Stack, Developer in India, Peryton Developer">
+        <meta name="author" content="Peryton">
+
+        <!--  Robots for SEO Crawling -->
+        <meta name="robots" content="index, follow">
+
+        <!--  Open Graph / Facebook -->
+        <meta property="og:title" content="Peryton | Full Stack Web Developer Portfolio">
+        <meta property="og:description"
+            content="Explore Peryton’s Full Stack Developer Portfolio showcasing projects built with React, Node.js, Python, and more.">
+        <meta property="og:image" content="https://yourdomain.com/images/preview.jpg">
+        <!-- Replace with real image URL -->
+        <meta property="og:url" content="https://yourdomain.com/">
+        <meta property="og:type" content="website">
+
+        <!--  Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Peryton | Full Stack Web Developer Portfolio">
+        <meta name="twitter:description"
+            content="Explore Peryton’s Full Stack Developer Portfolio — modern, responsive, and built with the latest tech.">
+        <meta name="twitter:image" content="https://yourdomain.com/images/preview.jpg">
+
+        <!--  Favicon (Replace with your icon file) -->
+        <link rel="icon" href="images/favicon.png" type="image/png">
+
+        <!--  Preload Font for Faster Load -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!--  Main Fonts and Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--  Structured Data (For Google Rich Results) -->
+        <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Peryton",
+        "jobTitle": "Full Stack Web Developer",
+        "url": "https://yourdomain.com",
+        "sameAs": [
+            "https://github.com/peryton00",
+            "https://linkedin.com/in/yourprofile",
+            "https://twitter.com/yourprofile"
+        ],
+        "knowsAbout": ["Web Development", "React", "Node.js", "Python", "Database Design"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+
+        <!-- ✅ EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2>&lt;Developer/&gt;</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm a <span class="gradient-text">Full Stack</span><br>
+                        Web Developer
+                    </h1>
+                    <p class="hero-description">
+                        Crafting robust, scalable web applications with modern technologies.
+                        From concept to deployment, I bring ideas to life.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Full Stack Developer"</span>,
+  skills: [<span class="code-string">"Frontend"</span>, <span class="code-string">"Backend"</span>, <span class="code-string">"Database"</span>],
+  passion: <span class="code-string">"Building Amazing Web Apps"</span>,
+  <span class="code-function">code</span>: () => {
+    <span class="code-keyword">return</span> <span class="code-string">"Clean & Efficient"</span>;
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a passionate full-stack web developer with expertise in building
+                            modern web applications. With a strong foundation in both frontend and
+                            backend technologies, I create seamless digital experiences that are
+                            both beautiful and functional.
+                        </p>
+                        <p class="about-description">
+                            My journey in web development has equipped me with a diverse skill set,
+                            allowing me to tackle complex challenges and deliver high-quality solutions.
+                            I'm constantly learning and adapting to new technologies to stay at the
+                            forefront of web development.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>15+</h3>
+                                <p>Technologies Mastered</p>
+                            </div>
+                            <div class="stat">
+                                <h3>100%</h3>
+                                <p>Commitment to Quality</p>
+                            </div>
+                            <div class="stat">
+                                <h3>∞</h3>
+                                <p>Learning Mindset</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">C#</span>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Database Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Systems Programming -->
+                    <div class="skill-category">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Systems Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Rust</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Visual -->
+                <div class="tech-stack">
+                    <h3 class="tech-stack-title">Technology Stack</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item" data-tech="JavaScript">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item" data-tech="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item" data-tech="React">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item" data-tech="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item" data-tech="HTML5">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item" data-tech="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item" data-tech="Vue.js">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="tech-item" data-tech="PHP">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-item" data-tech="Database">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item" data-tech="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item" data-tech="Rust">
+                            <i class="fab fa-rust"></i>
+                            <span>Rust</span>
+                        </div>
+                        <div class="tech-item" data-tech="C#">
+                            <i class="fas fa-hashtag"></i>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with React frontend, Node.js backend, and PostgreSQL
+                                database.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management System</h3>
+                            <p>Collaborative task management app with real-time updates using Vue.js and Python backend.
+                            </p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Python</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Data visualization dashboard with interactive charts and real-time data processing.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>C#</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Content Management System</h3>
+                            <p>Custom CMS built with PHP and modern JavaScript for efficient content management.</p>
+                            <div class="project-tags">
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>peryton456@gmail.com.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 88175 96894</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>New-raipur, C.G, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; <span id="currentYear"></span> Full Stack Developer. Built with passion and code.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>(function () {
+                emailjs.init({
+                    publicKey: "F6JrZ3S-tVrYzphaY"
+                });
+            })();</script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
