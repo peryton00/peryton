@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {}
+
 :root {
     --primary-color: #6366f1;
     --primary-dark: #4f46e5;
@@ -18,10 +20,58 @@
     --accent-gradient: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
     --success-color: #10b981;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --scrollbar-width: 10px;
+    --scrollbar-track-bg: #0f172a;
+    /* Deep dark background (matches main site bg) */
+    --scrollbar-thumb-bg: #3b82f6;
+    /* Primary Accent Color (e.g., Blue, Purple, or Green) */
+    --scrollbar-thumb-hover: #60a5fa;
+    /* Lighter version for hover effect */
 }
+
+/* The total width/height of the scrollbar */
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+    /* For horizontal scrollbars */
+}
+
+/* The Track (Background) */
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-bg);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    /* Subtle separator line */
+}
+
+/* The Thumb (The moving part) */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 5px;
+    /* Fully rounded ends */
+    border: 2px solid var(--scrollbar-track-bg);
+    /* Creates a "floating" effect */
+    background-clip: padding-box;
+}
+
+/* The Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+    border: 1px solid var(--scrollbar-track-bg);
+    /* Slightly larger on hover */
+}
+
+/* The Corner (Where vertical/horizontal meet) */
+::-webkit-scrollbar-corner {
+    background: var(--scrollbar-track-bg);
+}
+
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-track-bg);
+    scrollbar-width: thin;
+    /* Options: auto | thin | none */
 }
 
 body {
@@ -136,7 +186,7 @@ body {
     right: 0;
     bottom: 0;
     background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -741,6 +791,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -752,6 +803,7 @@ section {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
